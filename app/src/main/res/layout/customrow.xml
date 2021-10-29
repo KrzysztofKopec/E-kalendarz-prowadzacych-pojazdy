@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:id="@+id/rellay">
+
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:ems="7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textLinia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:ems="8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="75dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textPoczatek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:ems="7"
+        android:layout_alignEnd="@+id/textData"
+        android:layout_alignRight="@+id/textData"
+        android:layout_below="@+id/textData"
+        android:layout_marginTop="13dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textKoniec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:ems="8"
+        android:layout_alignLeft="@+id/textLinia"
+        android:layout_alignStart="@+id/textLinia"
+        android:layout_alignTop="@+id/textPoczatek"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textGodzinyMinuty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:ems="7"
+        android:layout_alignLeft="@+id/textPoczatek"
+        android:layout_alignStart="@+id/textPoczatek"
+        android:layout_below="@+id/textPoczatek"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textNrPojazdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:ems="8"
+        android:layout_alignLeft="@+id/textKoniec"
+        android:layout_alignStart="@+id/textKoniec"
+        android:layout_alignTop="@+id/textGodzinyMinuty"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textNotatka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/textNrPojazdu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textNotatka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/tram1"/>
+</RelativeLayout>

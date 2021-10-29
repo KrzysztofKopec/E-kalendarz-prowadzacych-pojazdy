@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auto1"
+    tools:context="com.example.krzy007.e_kalendarzprowadzacychpojazdy.AddWorkActivity">
+
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="7"
+        android:hint="@string/date"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/linia_brygada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/data"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/data"
+        android:layout_toRightOf="@+id/data"
+        android:maxLength="6"
+        android:inputType="date"
+        android:ems="7"
+        android:hint="@string/line_work" />
+
+    <EditText
+        android:id="@+id/godzPoczatkowa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/data"
+        android:layout_alignStart="@+id/data"
+        android:layout_below="@+id/data"
+        android:ems="7"
+        android:inputType="datetime"
+        android:hint="@string/start_work"
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/godzKonca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linia_brygada"
+        android:layout_alignStart="@+id/linia_brygada"
+        android:layout_alignTop="@+id/godzPoczatkowa"
+        android:maxLength="5"
+        android:inputType="datetime"
+        android:ems="7"
+        android:hint="@string/end_work" />
+
+    <EditText
+        android:id="@+id/godziny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/godzPoczatkowa"
+        android:layout_alignStart="@+id/godzPoczatkowa"
+        android:layout_below="@+id/godzPoczatkowa"
+        android:layout_marginTop="32dp"
+        android:ems="3"
+        android:hint="@string/values_hours_work"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <EditText
+        android:id="@+id/nrPojazdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/godzKonca"
+        android:layout_alignLeft="@+id/godzKonca"
+        android:layout_alignBottom="@+id/godziny"
+        android:ems="7"
+        android:hint="@string/no_bus"
+        android:maxLength="6" />
+
+
+
+    <Button
+        android:id="@+id/btnZapisz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/save"
+        android:onClick="onClickSave"/>
+
+    <EditText
+        android:id="@+id/minuty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/godziny"
+        android:layout_alignBottom="@+id/godziny"
+        android:layout_toEndOf="@+id/godziny"
+        android:layout_toRightOf="@+id/godziny"
+        android:maxLength="2"
+        android:ems="3"
+        android:inputType="number"
+        android:hint="@string/values_minutes_work" />
+
+    <EditText
+        android:id="@+id/notatka"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_below="@+id/godziny"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/btnZapisz"
+        android:inputType="textMultiLine"
+        android:hint="@string/note" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_above="@+id/minuty"
+        android:layout_alignLeft="@+id/godziny"
+        android:layout_alignStart="@+id/godziny"
+        android:text="@string/przepracowano" />
+
+
+</RelativeLayout>

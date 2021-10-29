@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">E-kalendarz prowadzacych pojazdy</string>
+    <string name="text_menu">E-kalendarz prowadzących pojazdy</string>
+    <string name="add_work">Dodaj służbę</string>
+    <string name="search_work">Przeglądaj służby z danego miesiąca</string>
+    <string name="hours_work">Przepracowane godziny</string>
+    <string name="date">Data</string>
+    <string name="line_work">Linia/Brygada</string>
+    <string name="start_work">Godz rozpoczęcia</string>
+    <string name="end_work">Godz zakończenia</string>
+    <string name="no_bus">Numer pojazdu</string>
+    <string name="values_hours_work">Godz:</string>
+    <string name="values_minutes_work">Min:</string>
+    <string name="note">Notatka</string>
+    <string name="save">Zapisz</string>
+    <string name="month">Inne miesiące</string>
+    <string name="prev">Poprzedni</string>
+    <string name="next">Następny</string>
+    <string name="save_change">Zapisz zmiany</string>
+    <string name="add_change">Edytuj dane</string>
+    <string name="back_to_menu">Strona główna</string>
+    <string name="przepracowano">Przepracowano:</string>
+    <string name="btn_exit">Wróć</string>
+    <string name="text_info">Witam, jest to aplikacja odpowiadająca prawie 1:1 naszemu kalendarzykowi w wersj
+        papierowej, która dodatkowo zlicza przepracowane godziny z danego miesiąca , przechowuje zapisane służby,
+        pozwala przeglądać służby z danego miesiąca oraz je edytować. Aplikacja jest w fazie testów,
+        na razie w skromnej wersji, w przypadku większego zainteresowania, będą dodawane nowe opcje lub wprowadzane
+        zmiany. Dlatego jeśli jej używasz to daj znać na maila: konto_ciepok@interia.pl, jeśli masz jakieś uwagi, komentarze
+        , pomysły zmian , pisz na maila, dzięki temu będę miał zwrotnego maila do ciebie i w razie
+        czego poinformuję cię o ewentualnych zmianach lub nowych wersjach. Program nie pobiera żadnych danych z sieci czy też
+        internetu, jest ogólnodostępny.</string>
+</resources>

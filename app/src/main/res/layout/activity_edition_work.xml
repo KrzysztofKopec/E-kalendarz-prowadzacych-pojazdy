@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auto1"
+    tools:context="com.example.krzy007.e_kalendarzprowadzacychpojazdy.EditionWorkActivity">
+
+    <EditText
+        android:id="@+id/eData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:maxLength="10"
+        android:ems="7"
+        android:hint="@string/date"/>
+
+    <EditText
+        android:id="@+id/eLinia_brygada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eData"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/eData"
+        android:layout_toRightOf="@+id/eData"
+        android:maxLength="6"
+        android:inputType="date"
+        android:ems="7"
+        android:hint="@string/line_work" />
+
+    <EditText
+        android:id="@+id/eGodzPoczatkowa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eData"
+        android:layout_alignStart="@+id/eData"
+        android:layout_below="@+id/eData"
+        android:ems="7"
+        android:inputType="datetime"
+        android:hint="@string/start_work"
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/eGodzKonca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eLinia_brygada"
+        android:layout_alignStart="@+id/eLinia_brygada"
+        android:layout_alignTop="@+id/eGodzPoczatkowa"
+        android:maxLength="5"
+        android:inputType="datetime"
+        android:ems="7"
+        android:hint="@string/end_work" />
+
+    <EditText
+        android:id="@+id/eGodziny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eGodzPoczatkowa"
+        android:layout_alignStart="@+id/eGodzPoczatkowa"
+        android:layout_below="@+id/eGodzPoczatkowa"
+        android:layout_marginTop="29dp"
+        android:ems="3"
+        android:hint="@string/values_hours_work"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <EditText
+        android:id="@+id/eNrPojazdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eGodziny"
+        android:layout_alignLeft="@+id/eGodzKonca"
+        android:layout_alignStart="@+id/eGodzKonca"
+        android:maxLength="6"
+        android:ems="7"
+        android:hint="@string/no_bus" />
+
+
+
+    <Button
+        android:id="@+id/btnZapisz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/save_change"
+        android:onClick="onClickEditionSave"/>
+
+    <EditText
+        android:id="@+id/eMinuty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eGodziny"
+        android:layout_alignBottom="@+id/eGodziny"
+        android:layout_toEndOf="@+id/eGodziny"
+        android:layout_toRightOf="@+id/eGodziny"
+        android:maxLength="2"
+        android:ems="3"
+        android:inputType="number"
+        android:hint="@string/values_minutes_work" />
+
+    <EditText
+        android:id="@+id/eNotatka"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnZapisz"
+        android:layout_below="@+id/eGodziny"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:hint="@string/note"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/add_change" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eMinuty"
+        android:textSize="16sp"
+        android:layout_alignLeft="@+id/eGodziny"
+        android:layout_alignStart="@+id/eGodziny"
+        android:text="@string/przepracowano" />
+
+</RelativeLayout>
