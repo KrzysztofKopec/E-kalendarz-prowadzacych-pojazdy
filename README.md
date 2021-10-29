@@ -8,3 +8,5 @@
         , pomysły zmian , pisz na maila, dzięki temu będę miał zwrotnego maila do ciebie i w razie
         czego poinformuję cię o ewentualnych zmianach lub nowych wersjach. Program nie pobiera żadnych danych z sieci czy też
         internetu, jest ogólnodostępny
+        
+        Link do gotowej aplikacji : https://drive.google.com/file/d/1kawY1lLtJH_bDTqXXZPsosYqHXQsEAZW/view?usp=sharing
