@@ -10,3 +10,5 @@
         internetu, jest ogólnodostępny
         
         Link do gotowej aplikacji : https://drive.google.com/file/d/1kawY1lLtJH_bDTqXXZPsosYqHXQsEAZW/view?usp=sharing
+        
+        Lub pobierz [tutaj](https://drive.google.com/file/d/1kawY1lLtJH_bDTqXXZPsosYqHXQsEAZW/view?usp=sharing)
