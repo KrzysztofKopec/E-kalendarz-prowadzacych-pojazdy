@@ -46,7 +46,7 @@ public class EditionWorkActivity extends Activity {
         int fieldHour = 0;
         int fieldMinute = 0;
         String fieldDate = eDate.getText().toString();
-        if(!fieldDate.substring(2,3).equals("-") || !fieldDate.substring(5,6).equals("-")){
+        if(fieldDate.charAt(2) != '-' || fieldDate.charAt(5) != '-'){
             Toast.makeText(this,"Niepoprawny format daty", Toast.LENGTH_LONG).show();
             return;
         }
